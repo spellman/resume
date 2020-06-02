@@ -236,8 +236,8 @@
           [:span {:style (css/style {:font-size (units/px 14)
                                      :color "#686868"})}
            "("
-           [:a {:href "tinyurl.com/yah6pgne"}
-            "tinyurl.com/yah6pgne"]
+           [:a {:href "https://www.linkedin.com/company/the-reynolds-and-reynolds-company"}
+            "https://www.linkedin.com/company/the-reynolds-and-reynolds-company"]
            ")"]
           " "
           (in-line-date (date {:start "2009" :end "2011"}))
