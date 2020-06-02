@@ -132,6 +132,10 @@
            (map (fn [skill] [:li {:style (css/style {:display 'block})} skill])
                 skills)))))
 
+(defn usage-number [s]
+  [:span {:style (css/style {:font-style 'italic})}
+   "(" s")"])
+
 (defn work-experience []
   (section
    "Work Experience"
@@ -143,11 +147,11 @@
    [:ul
     [:li "Propose, build, and test features and implement redesign and conversion from React, Redux to ClojureScript, Reagent on"
      [:ul
-      [:li [:a {:href "http://roomkey.com/"} "roomkey.com"] " single-page application"]
-      [:li "Interstitial pop-under that displays on Roomkey’s partner’s sites (Marriott, Hilton, Hyatt, etc.) and is responsible for 90%+ of Roomkey’s revenue"]]]
+      [:li [:a {:href "http://roomkey.com/"} "roomkey.com"] " single-page application " (usage-number "38k visitors/day")]
+      [:li "Interstitial pop-under that displays on Roomkey’s partner’s sites (Marriott, Hilton, Hyatt, etc.) and is responsible for 90%+ of Roomkey’s revenue " (usage-number "230k visitors/day")]]]
     [:li [:span "Propose and build features and handle maintenance and deployment of "
           [:a {:href "https://www.roomkey.com/scout"} "Scout by Roomkey"]
-          " browser extension."]]
+          " browser extension. " (usage-number "51k total downloads, 29k average weekly users at peak")]]
     [:li "Built features for internal admin tool and corrected a deficient audit-trail data model and diff GUI, using ClojureScript, Reagent, Re-frame, Clojure, and Datomic Cloud."]
     [:li "Maintained browser-automation-based tests of Scout by Roomkey browser extension and then proposed and built lower-maintenance method of testing."]
     [:li "Helped expand Scout by Roomkey Chrome-only browser extension to Firefox."]]
