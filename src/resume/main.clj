@@ -232,7 +232,7 @@
           (in-line-date (date {:start "2006" :end "2009"})
                         (date {:start "2011" :end "2013"}))]]
     [:li [:span
-          "Worked full-time as front-end developer at Reynolds & Reynolds "
+          "Worked full-time as a front-end developer at Reynolds & Reynolds "
           [:span {:style (css/style {:font-size (units/px 14)
                                      :color "#686868"})}
            "("
